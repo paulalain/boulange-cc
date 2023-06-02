@@ -37,17 +37,17 @@ def check_type(type):
 def get_selector(selector):
     if selector == TYPE_BAKERY:
         return BAKERY
-    if selector == TYPE_KEBAB:
+    elif selector == TYPE_KEBAB:
         return KEBAB 
-    if selector == TYPE_PIZZA:
+    elif selector == TYPE_PIZZA:
         return PIZZA
-    if selector == TYPE_HISTORY:
+    elif selector == TYPE_HISTORY:
         return HISTORY
-    if selector == TYPE_WATER:
+    elif selector == TYPE_WATER:
         return WATER
-    if selector == TYPE_CAFE:
+    elif selector == TYPE_CAFE:
         return CAFE
-    
+
     return BAKERY
 
 def get_box_for_coordinate(latitude, longitude):
