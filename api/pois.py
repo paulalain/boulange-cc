@@ -10,7 +10,7 @@ from flask import jsonify
 overpass = Overpass()
 nominatim = Nominatim()
 
-SKIP_POINTS = 300
+SKIP_POINTS = 20
 RADIUS = 500 # meters
 R_EARTH = 6378 * 1000 # meters
 PI = 3.14159
@@ -103,7 +103,6 @@ def add_in_dict(dict, pois, distance_from_start):
 
 def get_pois(poi_type, gpx_file):
     gpx = open(gpx_file, 'r')
-    print(gpx_file)
     parsed_gpx = gpxpy.parse(gpx)
 
     pois = dict()
