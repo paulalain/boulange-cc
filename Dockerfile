@@ -10,6 +10,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the project files
 COPY . .
 
+RUN chmod 777 /gpx_upload
+
 # Expose the server port
 EXPOSE 8080
 
