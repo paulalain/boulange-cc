@@ -14,4 +14,4 @@ COPY . .
 EXPOSE 8080
 
 # Command to start the server
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app", "--timeout", "30"]
