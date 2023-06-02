@@ -40,5 +40,5 @@ def upload_gpx_file(files):
     
 
 def delete_gpx_file(filename):
-    if os.path.exists(filename) and allowed_file(filename):
+    if os.path.exists(filename):
         os.remove(filename)
