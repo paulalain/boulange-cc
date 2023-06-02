@@ -10,8 +10,8 @@ from flask import jsonify
 overpass = Overpass()
 nominatim = Nominatim()
 
-SKIP_POINTS = 50
-RADIUS = 500 # meters
+SKIP_POINTS = 100
+RADIUS = 1200 # meters
 R_EARTH = 6378 * 1000 # meters
 PI = 3.14159
 MIN_KM_BEFORE_STOP = 10000 # meters
