@@ -16,4 +16,4 @@ RUN chmod 777 /app/gpx_upload
 EXPOSE 8080
 
 # Command to start the server
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app", "--timeout", process.env.TIMEOUT]
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app", "--timeout", "45"]
